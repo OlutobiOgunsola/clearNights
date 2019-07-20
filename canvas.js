@@ -4,6 +4,11 @@ const c = canvas.getContext("2d");
 canvas.height = window.innerHeight;
 canvas.width = window.innerWidth;
 
+window.addEventListener("resize", function() {
+  canvas.height = window.innerHeight;
+  canvas.width = window.innerWidth;
+});
+
 randomInt = (x, y) => {
   return Math.random() * (y - x + 1) + x;
 };
