@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+header {
+  width: 50px;
+  /* border: 1px solid rgb(71, 219, 133); */
+  background-color: black;
+  position: absolute;
+  top: 1;
+  left: 1;
+  height: 50px;
+  z-index: 2;
+  transition: height 2s, box-shadow 2s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  margin: 0;
+  padding: 50px;
+  border-radius: 3px;
+}
+
+header:hover {
+  height: 500px;
+  width: 300px;
+  /* box-shadow: 1px 1px 2px purple; */
+}
+#headerTrigger {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  padding: 0;
+}
+
+#headerWrapper {
+  width: 52px;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  position: absolute;
+  top: 59;
+  left: 19;
+  height: 52px;
+  z-index: 4;
+  transition: height 2s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  padding: 0;
+  border-radius: 3px;
+}
+#headerWrapper:hover {
+  height: 505px;
+  width: 302px;
+
+  background: linear-gradient(to right, #43cea2, #185a9d);
+}
+canvas {
+  position: fixed;
+  z-index: 0;
+  border: 1px solid black;
+  background-image: radial-gradient(rgb(20, 15, 15), rgb(0, 0, 0));
+}
+#hello {
+  border: 1px solid white;
+  position: relative;
+  height: auto;
+  width: 300px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
